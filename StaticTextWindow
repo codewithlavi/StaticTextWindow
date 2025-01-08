@@ -1,0 +1,13 @@
+Static Proc lpText:DWord, hParent:DWord, x:DWord, y:DWord, wd:DWord,
+ht:DWord, ID:DWord
+
+	Invoke CreateWindowEx, WS_EX_STATICEDGE, Addr ClsTextos, lpText,
+	WS_CHILD OR WS_VISIBLE OR SS_LEFT, x, y, wd, ht, hParent, ID,
+	hInst, NULL
+
+	Ret
+
+
+
+	Ret
+Static EndP
